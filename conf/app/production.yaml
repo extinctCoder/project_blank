@@ -1,0 +1,2 @@
+development: False
+log_format: '%(asctime)s: %(levelname)s, %(message)s'
