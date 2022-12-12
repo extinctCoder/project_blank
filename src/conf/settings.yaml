@@ -1,0 +1,3 @@
+default:
+  debug: True
+  log_format: '%(asctime)s %(filename)s: %(levelname)s, %(message)s'
