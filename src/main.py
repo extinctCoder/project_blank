@@ -28,5 +28,6 @@ def main_app(cfg: DictConfig) -> None:
     return None
 
 
+# test done with hydra
 if __name__ == '__main__':
     main_app()
