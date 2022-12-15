@@ -1,0 +1,23 @@
+version: '3.7'
+
+networks:
+  pb_net:
+    driver: bridge
+    name: pb_net
+
+services:
+  app_server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: project_blank:local
+    container_name: app_server
+    hostname: app_server
+    restart: on-failure:0
+    environment:
+      - APP_DEBUG=true
+    volumes:
+      - ./src:/app/src
+      - ./conf:/app/conf
+    networks:
+      - pb_net

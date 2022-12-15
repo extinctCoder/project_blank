@@ -6,3 +6,5 @@ logger = log_arbiter(__name__)
 if __name__ == '__main__':
     logger.info('hello world ... ... ... :)')
     logger.error('hello world is not working ... ... ... :)')
+    # x = input('give a input: ')
+    # print(x)
